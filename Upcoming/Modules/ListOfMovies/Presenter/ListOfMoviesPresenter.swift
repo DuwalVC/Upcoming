@@ -8,11 +8,15 @@
 import Foundation
 
 protocol ListOfMoviesPresenterViewControllerProtocol {
-    
+    func getListOfMovies(page: Int)
+    func showMovieDetails(movie: Result)
+
 }
 
 protocol ListOfMoviesPresenterInteractorProtocol: AnyObject {
-    
+    func setMovies(_ movies: [Result])
+    func showErrorAlert(error: String)
+    func setDataListOfMovies(_ data: ListOfMovies)
 }
 
 protocol ListOfMoviesPresenterRouterProtocol: AnyObject {
@@ -27,9 +31,29 @@ class ListOfMoviesPresenter {
 
 extension ListOfMoviesPresenter: ListOfMoviesPresenterViewControllerProtocol {
     
+    
+    func showMovieDetails(movie: Result) {
+        router?.showMovieDetails(movie: movie)
+    }
+    
+    func getListOfMovies(page: Int) {
+        interactor?.getListOfMovies(page: page)
+    }
+    
 }
 
 extension ListOfMoviesPresenter: ListOfMoviesPresenterInteractorProtocol {
+    func setMovies(_ movies: [Result]) {
+        view?.setMovies(movies)
+    }
+    
+    func showErrorAlert(error: String) {
+        router?.showErrorAlert(error: error)
+    }
+    
+    func setDataListOfMovies(_ data: ListOfMovies) {
+        view?.setDataListOfMovies(data)
+    }
     
 }
 

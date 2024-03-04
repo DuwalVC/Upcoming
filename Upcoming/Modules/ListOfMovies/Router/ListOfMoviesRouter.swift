@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 protocol ListOfMoviesRouterPresenterProtocol {
-
+    func showErrorAlert(error: String)
+    func showMovieDetails(movie: Result)
 }
 
 class ListOfMoviesRouter {
@@ -18,5 +19,13 @@ class ListOfMoviesRouter {
 }
 
 extension ListOfMoviesRouter: ListOfMoviesRouterPresenterProtocol {
+    func showMovieDetails(movie: Result) {
+        view?.navigationController?.pushViewController(MovieDetailsConfigurator.makeView(), animated: true)
+    }
     
+    func showErrorAlert(error: String) {
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil))
+        view?.present(alert, animated: true, completion: nil)
+    }
 }
