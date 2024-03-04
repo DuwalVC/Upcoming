@@ -53,9 +53,6 @@
                                 <rect key="frame" x="20" y="227.66666666666666" width="353" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Validar"/>
-                                <connections>
-                                    <action selector="validateButton:" destination="DV1-tb-LDW" eventType="touchUpInside" id="Wkr-Gs-4sx"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bsP-mW-cdO"/>
@@ -73,10 +70,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ingresar" id="TWl-qQ-ypW"/>
-                    <connections>
-                        <outlet property="passwordTextField" destination="o8N-fd-oIF" id="o7F-Lp-mOg"/>
-                        <outlet property="userTextField" destination="EVe-XW-svU" id="zzQ-Uy-SFk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EI3-pt-W6B" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +86,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IPn-wR-Xwq">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListOfMoviesCellIdentifier" textLabel="5ge-Vi-PN2" style="IBUITableViewCellStyleDefault" id="EoT-Jc-VSM" customClass="ListOfMoviesTableViewCell" customModule="PrePostulacion" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListOfMoviesCellIdentifier" textLabel="5ge-Vi-PN2" style="IBUITableViewCellStyleDefault" id="EoT-Jc-VSM" customClass="ListOfMoviesTableViewCell" customModule="Upcoming" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EoT-Jc-VSM" id="ZNJ-cx-Svo">
@@ -126,9 +119,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Próximos Estrenos" id="8hZ-gm-Vvq"/>
-                    <connections>
-                        <outlet property="table" destination="IPn-wR-Xwq" id="V3Z-gd-m5b"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEm-iz-VEP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,13 +204,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detalles" id="FOd-hg-3Gc"/>
-                    <connections>
-                        <outlet property="dateLabel" destination="mSk-Qx-Id5" id="Op2-NJ-TzM"/>
-                        <outlet property="notaLabel" destination="sJ9-gy-CWf" id="WfQ-7W-fTg"/>
-                        <outlet property="posterImageView" destination="aav-J1-2Vz" id="7is-VO-7Qp"/>
-                        <outlet property="summaryLabel" destination="j8t-fl-i7o" id="6mV-Gt-2ay"/>
-                        <outlet property="titleLabel" destination="4p5-yO-DJA" id="xcH-MT-zyK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OjI-3e-W5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
