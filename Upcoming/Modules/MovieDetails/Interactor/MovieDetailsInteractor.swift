@@ -5,6 +5,8 @@
 //  Created by dvarillc on 3/03/24.
 //
 
+import Foundation
+
 protocol MovieDetailsInteractorPresenterProtocol {
     
 }

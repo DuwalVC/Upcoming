@@ -10,7 +10,7 @@ import UIKit
 
 class MovieDetailsConfigurator {
     
-    static func makeView() -> UIViewController {
+    static func makeView(movie: Result) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let view = storyboard.instantiateViewController(identifier: "MovieDetailsIdentifier") as? MovieDetailsViewController else{
             return UIViewController()
@@ -21,6 +21,7 @@ class MovieDetailsConfigurator {
         let presenter = MovieDetailsPresenter()
 
         view.presenter = presenter
+        view.movie = movie
         interactor.presenter = presenter
         router.view = view
         router.presenter = presenter
