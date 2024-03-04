@@ -10,7 +10,7 @@ import Foundation
 protocol ListOfMoviesPresenterViewControllerProtocol {
     func getListOfMovies(page: Int)
     func showMovieDetails(movie: Result)
-
+    func deleteAllMovies()
 }
 
 protocol ListOfMoviesPresenterInteractorProtocol: AnyObject {
@@ -30,7 +30,9 @@ class ListOfMoviesPresenter {
 }
 
 extension ListOfMoviesPresenter: ListOfMoviesPresenterViewControllerProtocol {
-    
+    func deleteAllMovies() {
+        interactor?.deleteAllMovies()
+    }
     
     func showMovieDetails(movie: Result) {
         router?.showMovieDetails(movie: movie)

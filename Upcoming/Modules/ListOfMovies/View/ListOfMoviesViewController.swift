@@ -28,6 +28,9 @@ class ListOfMoviesViewController: UIViewController {
         table.dataSource = self
         table.delegate = self
         
+        if Internet.connectedToTheInternet() {
+            presenter?.deleteAllMovies()
+        }
     }
 
 }

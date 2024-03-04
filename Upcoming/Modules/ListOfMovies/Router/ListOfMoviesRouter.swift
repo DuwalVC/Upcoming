@@ -20,7 +20,7 @@ class ListOfMoviesRouter {
 
 extension ListOfMoviesRouter: ListOfMoviesRouterPresenterProtocol {
     func showMovieDetails(movie: Result) {
-        view?.navigationController?.pushViewController(MovieDetailsConfigurator.makeView(), animated: true)
+        view?.navigationController?.pushViewController(MovieDetailsConfigurator.makeView(movie: movie), animated: true)
     }
     
     func showErrorAlert(error: String) {

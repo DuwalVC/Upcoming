@@ -19,9 +19,12 @@ class ListOfMoviesConfigurator {
         let interactor = ListOfMoviesInteractor()
         let router = ListOfMoviesRouter()
         let presenter = ListOfMoviesPresenter()
+        
+        let api = ServicesClientHTTPListOfMovie()
 
         view.presenter = presenter
         interactor.presenter = presenter
+        interactor.api = api
         router.view = view
         router.presenter = presenter
         presenter.view = view
