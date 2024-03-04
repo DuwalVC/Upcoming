@@ -19,11 +19,13 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func validateButton(_ sender: Any) {
-        
+        presenter?.validate(userTextField.text ?? "", passwordTextField.text ?? "")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        navigationItem.backButtonTitle = "Cerrar S."
 
     }
     
