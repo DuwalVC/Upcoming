@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DV1-tb-LDW">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -12,7 +12,7 @@
         <!--Ingresar-->
         <scene sceneID="IDm-gq-i9X">
             <objects>
-                <viewController id="DV1-tb-LDW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInIdentifier" id="DV1-tb-LDW" customClass="LogInViewController" customModule="Upcoming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ya-Mh-6oG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
         <!--Próximos Estrenos-->
         <scene sceneID="LXQ-bl-V4J">
             <objects>
-                <viewController id="50g-U6-Xc1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListOfMoviesIdentifier" id="50g-U6-Xc1" customClass="ListOfMoviesViewController" customModule="Upcoming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e2e-8M-n9W">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
         <!--Detalles-->
         <scene sceneID="J69-y7-zIp">
             <objects>
-                <viewController id="z22-qt-qxj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieDetailsIdentifier" id="z22-qt-qxj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TFl-St-a3v">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
